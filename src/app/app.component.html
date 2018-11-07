@@ -1,12 +1,26 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div>
-  <h1>{{ title }}</h1>
-  <nav>
-    <a routerLink="/dashboard">Dashboard</a> /  <a 
-    routerLink="/heroes">Heroes</a>
-  </nav>
-  <router-outlet></router-outlet>
-  <app-messages></app-messages>
-  <mat-checkbox>Check me</mat-checkbox>
-</div>
-
+<mat-sidenav-container class="nav-container">
+  <mat-sidenav #sidenav class="nav"
+    mode="side" 
+    [(opened)]="opened" 
+    (opened)="events.push('open!')" 
+    (closed)="events.push('close!')">
+    <nav>
+      <a routerLink="/dashboard">Dashboard</a> /
+      <a routerLink="/heroes">Heroes</a>
+    </nav>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <h1>{{ title }}</h1>
+    <app-messages></app-messages>
+    <mat-checkbox>Check me</mat-checkbox>
+    <router-outlet></router-outlet>
+    <p>
+      <mat-checkbox [(ngModel)]="opened">sidenav.opened</mat-checkbox>
+    </p>
+    <p><button mat-button (click)="sidenav.toggle()">sidenav.toggle()</button></p>
+    <p>Events:</p>
+    <div class="example-events">
+      <div *ngFor="let e of events">{{e}}</div>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>
