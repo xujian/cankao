@@ -12,6 +12,10 @@ import { AppRoutingModule } from './/app-routing.module';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { MaterialModule } from '../material.module';
 import { AppHeaderComponent } from './ui/header-component';
+import { ChaptersComponent } from './pages/chapters/chapters.component';
+import { ChapterComponent } from './pages/chapter/chapter.component';
+import { DashbaordComponent } from './pages/dashbaord/dashbaord.component';
+import { NotesComponent } from './pages/notes/notes.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +24,11 @@ import { AppHeaderComponent } from './ui/header-component';
     HeroDetailComponent,
     MessagesComponent,
     DashboardComponent,
-    AppHeaderComponent
+    AppHeaderComponent,
+    ChaptersComponent,
+    ChapterComponent,
+    DashbaordComponent,
+    NotesComponent
   ],
   imports: [
     BrowserModule,
