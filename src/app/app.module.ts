@@ -9,12 +9,11 @@ import { HeroesComponent } from './heroes/heroes.component';
 import { HeroDetailComponent } from './hero-detail/hero-detail.component';
 import { MessagesComponent } from './messages/messages.component';
 import { AppRoutingModule } from './/app-routing.module';
-import { DashboardComponent } from './dashboard/dashboard.component';
 import { MaterialModule } from '../material.module';
 import { AppHeaderComponent } from './ui/header-component';
 import { ChaptersComponent } from './pages/chapters/chapters.component';
 import { ChapterComponent } from './pages/chapter/chapter.component';
-import { DashbaordComponent } from './pages/dashbaord/dashbaord.component';
+import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { NotesComponent } from './pages/notes/notes.component';
 
 @NgModule({
@@ -23,11 +22,10 @@ import { NotesComponent } from './pages/notes/notes.component';
     HeroesComponent,
     HeroDetailComponent,
     MessagesComponent,
-    DashboardComponent,
     AppHeaderComponent,
     ChaptersComponent,
     ChapterComponent,
-    DashbaordComponent,
+    DashboardComponent,
     NotesComponent
   ],
   imports: [
