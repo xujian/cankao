@@ -1,0 +1,7 @@
+$cankao-primary: mat-palette($mat-deep-orange, 900, 800, 700);
+$cankao-accent: mat-palette($mat-light-blue);
+$cankao-warn: mat-palette($mat-pink, 600);
+
+$cankao-theme: mat-light-theme($cankao-primary,
+  $cankao-accent,
+  $cankao-warn);

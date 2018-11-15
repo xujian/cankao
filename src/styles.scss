@@ -1,0 +1,17 @@
+@import 'styles-variables';
+@import 'styles-reset';
+
+@import '../node_modules/@angular/material/theming';
+
+@include mat-core();
+
+@import 'themes/default-theme.scss';
+@import 'themes/light-theme.scss';
+
+.default-theme {
+  @include angular-material-theme($cankao-theme);
+}
+
+.light-theme {
+  @include angular-material-theme($cankao-light-theme);
+}

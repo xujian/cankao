@@ -1,0 +1,9 @@
+$cankao-light-primary: mat-palette($mat-grey, 200, 500, 300);
+$cankao-light-accent: mat-palette($mat-brown, 200);
+$cankao-light-warn: mat-palette($mat-deep-orange, 200);
+
+$cankao-light-theme: mat-light-theme(
+  $cankao-light-primary,
+  $cankao-light-accent,
+  $cankao-light-warn
+);

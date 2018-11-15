@@ -5,7 +5,7 @@ import { MatIconRegistry } from '@angular/material';
 @Component({
   selector: 'app-header',
   template: `
-  <mat-toolbar class="mat-hue-2">
+  <mat-toolbar color="primary">
     <mat-toolbar-row>
       <button mat-icon-button>
         <mat-icon svgIcon="menu"></mat-icon>
