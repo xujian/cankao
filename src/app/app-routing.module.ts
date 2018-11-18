@@ -4,6 +4,7 @@ import { HeroesComponent } from './heroes/heroes.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { HeroDetailComponent } from './hero-detail/hero-detail.component';
 import { ChaptersComponent } from './pages/chapters/chapters.component';
+import { SettingsContainerComponent } from './modules/settings';
 
 const routes: Routes = [
   {
@@ -26,6 +27,10 @@ const routes: Routes = [
   {
     path: 'chapters',
     component: ChaptersComponent
+  },
+  {
+    path: 'settings',
+    component: SettingsContainerComponent
   }
 ];
 
