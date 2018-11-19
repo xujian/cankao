@@ -15,6 +15,7 @@ import { ChaptersComponent } from './pages/chapters/chapters.component';
 import { ChapterComponent } from './pages/chapter/chapter.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { NotesComponent } from './pages/notes/notes.component';
+import { SettingsModule } from './modules/settings';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { NotesComponent } from './pages/notes/notes.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     MaterialModule,
-    HttpClientModule
+    HttpClientModule,
+    SettingsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
